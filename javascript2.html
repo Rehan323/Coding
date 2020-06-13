@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body
+{
+background-color:cyan;
+}
+</style>
+</head>
+<script>
+function calc()
+{
+var x = doument.getElementById("aa").value;
+/local scope
+var y = doument.getElementById("bb").value;
+var diff = x-y;
+alert(diff);
+}
+
+function product()
+{
+var x = doument.getElementById("aa").value;
+var y = doument.getElementById("bb").value;
+var product = x*y;
+alert(product);
+}
+function calcValue()
+{
+var x = doument.getElementById("aa").value;
+var y = doument.getElementById("bb").value;
+var diff = x-y
+var prod = x*y
+alert(Difference = +diff+ ,Product=+prod );
+}
+</script>
+<body>
+<form>
+<input id="aa" type="number" placeholder="first number"><br>
+<input type= id="bb" type="number" placeholder="second number"><br>
+ <button type="submit"
+onclick="calc()">Difference</button>
+ <button type="submit"
+onclick="prod()">Product</button>
+ <button type="submit"
+onclick="calcValue()">Value</button>
+</form>
+</body>
+</html>
